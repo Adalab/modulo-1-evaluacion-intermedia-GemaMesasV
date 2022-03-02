@@ -13,20 +13,41 @@
 --texto-main: #FFFFFF;
 
 }
-
-.logo-adalab {
-
-    width: 155px;
-    margin: 10px;
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 19px;
 }
-.menu-nav {
+.header {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 
-    margin: 10px 0px 13px 0px;
-    color: var(--texto-nav);
-    font-size: 16px;
+
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+}
+
+.logo-adalab {
+    width: 155px;
+    margin: 10px 0;
+}
+
+.menu-nav {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 13px;
+
+   
+}
+.lista-item {
+    padding: 0 10px;
+   color: var(--texto-nav);
+   font-size: 16px;
 
 }
 
@@ -34,12 +55,98 @@
     background-color: var(--color-fondo);
     color: var(--texto-main);
     text-align: center;
-    font-size: 30px;
-    font-weight: 700;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    
 }
 
+.main >h1 {
+    font-size: 30px;
 }
+
+.body {
+    height: 100vh;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* ESCRITORIO ¡¡¡CREAR ETIQUETA!!!*/
+
+
+@media all and (min-width:768px) 
+
+{
+    .header {
+
+
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    
+    .logo-adalab {
+        width: 155px;
+        margin: 20px 0px 20px 30px;
+    }
+    
+    .menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    
+       
+    }
+    .lista-item {
+        padding: 0 20px;
+       margin: 0;
+    }
+    
+    .main {
+        background-color: var(--color-fondo);
+        color: var(--texto-main);
+        text-align: center;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .main >h1 {
+        font-size: 40px;
+    }
+    
+    .body {
+        height: 100vh;
+        background-color: var(--color-fondo);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }  
+}
+
+/* {
+    /* .main >h1 {
+        font-size: 40px;
+
+}
+.lista-item {
+    padding: 0 20px;
+    padding-right: 30px;
+}
+
+.logo-adalab {
+
+        width: 155px;
+        margin: 20px 0px;
+        margin-left: 30px;
+        
+    } */ */
